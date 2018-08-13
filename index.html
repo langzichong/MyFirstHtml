@@ -7,16 +7,93 @@
         @keyframes myfirst
         {
             0%   {background:red; left:0px; top:0px;}
-            25%  {background:yellow; left:200px; top:0px;}
-            50%  {background:blue; left:200px; top:200px;}
-            75%  {background:green; left:0px; top:200px;}
+            25%  {background:yellow; left:1000px; top:0px;}
+            50%  {background:blue; left:1000px; top:0px;}
+            75%  {background:green; left:0px; top:0px;}
+            100% {background:red; left:0px; top:0px;}
+        }
+        @-webkit-keyframes myfirst
+        {
+            0%   {background:red; left:0px; top:0px;}
+            25%  {background:yellow; left:1000px; top:0px;}
+            50%  {background:blue; left:1000px; top:0px;}
+            75%  {background:green; left:0px; top:0px;}
             100% {background:red; left:0px; top:0px;}
         }
         h1{
-            width: 100px;
-            animation: myfirst 5s infinite;
+            /*align: center;*/
+            width:200px;
+            position:relative;
+            animation: myfirst 20s infinite;
+            -webkit-animation:myfirst 20s infinite;
+
+        }
+        p { color: #ff0000;font-size:20px;align:center;
+            position:relative;
+            animation:pmymove 20s infinite;
+            -webkit-animation:pmymove 20s infinite; /* Safari and Chrome */}
+        #p001{
+            animation-delay: 2s;
+        }
+        #p002{
+            animation-delay: 4s;
+        }
+        #p003{
+            animation-delay: 6s;
+        }
+        #p004{
+            animation-delay: 8s;
+         }
+
+
+        @keyframes mymove
+        {
+            0% {left:0px;}
+            0% {top:0px;}
+            25% {left:200px;}
+            25% {top:0px;}
+            50% {left:200px;}
+            50% {top:200px;}
+            75% {left:0px;}
+            75% {top:200px;}
+            100% {left:0px}
+            100% {top:0px}
         }
 
+        @-webkit-keyframes mymove /* Safari and Chrome */
+        {
+            0% {left:0px;}
+            0% {top:0px;}
+            25% {left:200px;}
+            25% {top:0px;}
+            50% {left:200px;}
+            50% {top:200px;}
+            75% {left:0px;}
+            75% {top:200px;}
+            100% {left:0px}
+            100% {top:0px}
+        }
+        table
+        {
+            position:relative;
+            animation:mymove 20s infinite;
+            -webkit-animation:mymove 20s infinite; /* Safari and Chrome */
+        }
+
+
+        @keyframes pmymove
+        {
+            0% {left:0px;}
+            50% {left:1000px;}
+            100% {left:0px}
+        }
+
+        @-webkit-keyframes pmymove /* Safari and Chrome */
+        {
+            0% {left:0px;}
+            50% {left:1000px;}
+            100% {left:0px}
+        }
         /*p*/
         /*{*/
             /*width:30px;*/
@@ -45,15 +122,28 @@
 </head>
 <body background="eg_background.jpg">
 <table><tr>
-    <td><img src="01.jpg" style="transform: rotate(90deg)" width="400" height="300"></td>
-    <td><img src="02.jpg" width="300" height="400"></td>
+    <td><a href="01.jpg"><img src="001.png" width="120" height="160" alt="laihongxu1"></a></td>
+    <td><a href="02.jpg"><img src="002.png" width="120" height="160" alt="laihongxu2"></a></td>
 </tr></table>
 
 <br>
-<h1>静夜思</h1>
-<p>床前明月光</p>
-<p>疑似地上霜</p>
-<p>举头望明月</p>
-<p>低头思故乡</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1 align="center">静夜思</h1>
+
+<p id="p001">床前明月光</p>
+<p id="p002">疑似地上霜</p>
+<p id="p003">举头望明月</p>
+<p id="p004">低头思故乡</p>
+
 </body>
 </html>
