@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>赖泓旭</title>
+    <style type="text/css">
+        @keyframes myfirst
+        {
+            0%   {background:red; left:0px; top:0px;}
+            25%  {background:yellow; left:1000px; top:0px;}
+            50%  {background:blue; left:1000px; top:0px;}
+            75%  {background:green; left:0px; top:0px;}
+            100% {background:red; left:0px; top:0px;}
+        }
+        @-webkit-keyframes myfirst
+        {
+            0%   {background:red; left:0px; top:0px;}
+            25%  {background:yellow; left:1000px; top:0px;}
+            50%  {background:blue; left:1000px; top:0px;}
+            75%  {background:green; left:0px; top:0px;}
+            100% {background:red; left:0px; top:0px;}
+        }
+        h1{
+            /*align: center;*/
+            width:200px;
+            position:relative;
+            animation: myfirst 20s infinite;
+            -webkit-animation:myfirst 20s infinite;
+
+        }
+        p { color: #ff0000;font-size:20px;align:center;
+            position:relative;
+            animation:pmymove 20s infinite;
+            -webkit-animation:pmymove 20s infinite; /* Safari and Chrome */}
+        #p001{
+            animation-delay: 2s;
+        }
+        #p002{
+            animation-delay: 4s;
+        }
+        #p003{
+            animation-delay: 6s;
+        }
+        #p004{
+            animation-delay: 8s;
+        }
+
+
+        @keyframes mymove
+        {
+            0% {left:0px;}
+            0% {top:0px;}
+            25% {left:200px;}
+            25% {top:0px;}
+            50% {left:200px;}
+            50% {top:200px;}
+            75% {left:0px;}
+            75% {top:200px;}
+            100% {left:0px}
+            100% {top:0px}
+        }
+
+        @-webkit-keyframes mymove /* Safari and Chrome */
+        {
+            0% {left:0px;}
+            0% {top:0px;}
+            25% {left:200px;}
+            25% {top:0px;}
+            50% {left:200px;}
+            50% {top:200px;}
+            75% {left:0px;}
+            75% {top:200px;}
+            100% {left:0px}
+            100% {top:0px}
+        }
+        table
+        {
+            position:relative;
+            animation:mymove 20s infinite;
+            -webkit-animation:mymove 20s infinite; /* Safari and Chrome */
+        }
+
+
+        @keyframes pmymove
+        {
+            0% {left:0px;}
+            50% {left:1000px;}
+            100% {left:0px}
+        }
+
+        @-webkit-keyframes pmymove /* Safari and Chrome */
+        {
+            0% {left:0px;}
+            50% {left:1000px;}
+            100% {left:0px}
+        }
+        /*p*/
+        /*{*/
+        /*width:30px;*/
+        /*height:30px;*/
+        /*background:red;*/
+        /*position:relative;*/
+        /*animation:myfirst1 5s linear 2s infinite alternate;*/
+        /*!* Firefox: *!*/
+        /*-moz-animation:myfirst1 5s linear 2s infinite alternate;*/
+        /*!* Safari and Chrome: *!*/
+        /*-webkit-animation:myfirst1 5s linear 2s infinite alternate;*/
+        /*!* Opera: *!*/
+        /*-o-animation:myfirst1 5s linear 2s infinite alternate;*/
+        /*}*/
+
+        /*@keyframes myfirst1*/
+        /*{*/
+        /*0%   {background:red; left:0px; top:0px;}*/
+        /*25%  {background:yellow; left:100px; top:0px;}*/
+        /*50%  {background:blue; left:100px; top:100px;}*/
+        /*75%  {background:green; left:0px; top:100px;}*/
+        /*100% {background:red; left:0px; top:0px;}*/
+        /*}*/
+        #pics {
+            align:center;
+            padding:5px;
+        }
+        #poem {
+            align:center;
+            padding:5px;
+        }
+
+    </style>
+</head>
+<body background="image/eg_background.jpg">
+<header>
+    <table><tr>
+        <td><a href="image/01.jpg"><img src="image/001.png" height="160" alt="laihongxu1"></a></td>
+        <td><a href="image/02.jpg"><img src="image/002.png" height="160" alt="laihongxu2"></a></td>
+    </tr></table></header>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div id="poem">
+    <h1 align="center">静夜思</h1>
+    <br>
+    <p id="p001">床前明月光</p>
+    <p id="p002">疑似地上霜</p>
+    <p id="p003">举头望明月</p>
+    <p id="p004">低头思故乡</p>
+</div>
+</body>
+</html>
